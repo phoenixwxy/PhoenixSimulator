@@ -1,0 +1,6 @@
+[submodule "Resource/TwinklebearDev-Lessons"]
+	path = Resource/TwinklebearDev-Lessons
+	url = https://github.com/Twinklebear/TwinklebearDev-Lessons
+[submodule "Resource/font/FiraCode"]
+	path = Resource/font/FiraCode
+	url = https://github.com/tonsky/FiraCode

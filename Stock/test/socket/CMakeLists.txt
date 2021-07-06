@@ -1,0 +1,11 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
+
+INCLUDE_DIRECTORIES(.)
+
+AUX_SOURCE_DIRECTORY(. SRC)
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  –with-system –with-regex stage")
+
+ADD_EXECUTABLE(socket_test ${SRC})
+
+#TARGET_LINK_LIBRARIES(Simulator ${ThirdParty}/SDL/lib/libSDL2.so)

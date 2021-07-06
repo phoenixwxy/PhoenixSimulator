@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Lessons7"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\Lessons6\;CMake Files\test\Lessons7\;CMake Files\test\Lessons8\;CMake Files\test\DisplayBMPPicture\;CMake Files\test\DisplayPictures\;CMake Files\test\Lessons3\;CMake Files\test\Lessons4\;CMake Files\test\Lesson5\;CMake Files\test\testCPP\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lessons7">
+				<Option output="/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Lessons7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/."/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/SDL/include"/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons7/."/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/include"/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/SDL_Image/include/SDL2"/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/SDL_Mixer/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 Lessons7"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lessons7/fast">
+				<Option output="/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Lessons7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/."/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/SDL/include"/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons7/."/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/include"/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/SDL_Image/include/SDL2"/>
+					<Add directory="/home/mi/workspace/code/PhoenixSimulator/Simulator/3rdParty/SDL_Mixer/include/SDL2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 Lessons7/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons7/main.cpp">
+			<Option target="Lessons7"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\Lessons6\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\Lessons7\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\Lessons8\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/DisplayBMPPicture/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\DisplayBMPPicture\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/DisplayPictures/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\DisplayPictures\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\Lessons3\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\Lessons4\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lesson5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\Lesson5\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/testCPP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\testCPP\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
