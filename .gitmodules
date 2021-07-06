@@ -1,0 +1,21 @@
+[submodule "Resource/TwinklebearDev-Lessons"]
+	path = Resource/TwinklebearDev-Lessons
+	url = https://github.com/Twinklebear/TwinklebearDev-Lessons
+[submodule "SDL"]
+	path = SDL
+	url = https://github.com/libsdl-org/SDL
+[submodule "SDL_mixer"]
+	path = SDL_mixer
+	url = https://github.com/libsdl-org/SDL_mixer
+[submodule "SDL_image"]
+	path = SDL_image
+	url = https://github.com/libsdl-org/SDL_image
+[submodule "SDL_ttf"]
+	path = SDL_ttf
+	url = https://github.com/libsdl-org/SDL_ttf
+[submodule "SDL_net"]
+	path = SDL_net
+	url = https://github.com/libsdl-org/SDL_net
+[submodule "SDL_rtf"]
+	path = SDL_rtf
+	url = https://github.com/libsdl-org/SDL_rtf
