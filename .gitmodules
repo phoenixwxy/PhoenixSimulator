@@ -4,3 +4,24 @@
 [submodule "Resource/font/FiraCode"]
 	path = Resource/font/FiraCode
 	url = https://github.com/tonsky/FiraCode
+[submodule "ThirdParty/SDL"]
+	path = ThirdParty/SDL
+	url = https://github.com/libsdl-org/SDL
+[submodule "ThirdParty/SDL_mixer"]
+	path = ThirdParty/SDL_mixer
+	url = https://github.com/libsdl-org/SDL_mixer
+[submodule "ThirdParty/SDL_image"]
+	path = ThirdParty/SDL_image
+	url = https://github.com/libsdl-org/SDL_image
+[submodule "ThirdParty/https:/github.com/libsdl-org/SDL_net"]
+	path = ThirdParty/https:/github.com/libsdl-org/SDL_net
+	url = https://github.com/libsdl-org/SDL_ttf
+[submodule "ThirdParty/SDL_ttf"]
+	path = ThirdParty/SDL_ttf
+	url = https://github.com/libsdl-org/SDL_ttf
+[submodule "ThirdParty/SDL_net"]
+	path = ThirdParty/SDL_net
+	url = https://github.com/libsdl-org/SDL_net
+[submodule "ThirdParty/SDL_rtf"]
+	path = ThirdParty/SDL_rtf
+	url = https://github.com/libsdl-org/SDL_rtf
