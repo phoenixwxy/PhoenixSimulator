@@ -5,7 +5,7 @@
 		<Option title="Lessons7"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\Lessons6\;CMake Files\test\Lessons7\;CMake Files\test\DisplayBMPPicture\;CMake Files\test\DisplayPictures\;CMake Files\test\Lessons3\;CMake Files\test\Lessons4\;CMake Files\test\Lesson5\;CMake Files\test\testCPP\;CMake Files\src\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\test\Lessons6\;CMake Files\test\Lessons7\;CMake Files\test\Lessons8\;CMake Files\test\DisplayBMPPicture\;CMake Files\test\DisplayPictures\;CMake Files\test\Lessons3\;CMake Files\test\Lessons4\;CMake Files\test\Lesson5\;CMake Files\test\testCPP\;CMake Files\src\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/mi/workspace/code/PhoenixSimulator/Simulator/cmake-build-debug/test/Lessons7"/>
@@ -88,6 +88,9 @@
 		</Unit>
 		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\Lessons7\"/>
+		</Unit>
+		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/Lessons8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\Lessons8\"/>
 		</Unit>
 		<Unit filename="/home/mi/workspace/code/PhoenixSimulator/Simulator/test/DisplayBMPPicture/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\DisplayBMPPicture\"/>

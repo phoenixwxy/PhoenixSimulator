@@ -1,21 +1,27 @@
 [submodule "Resource/TwinklebearDev-Lessons"]
 	path = Resource/TwinklebearDev-Lessons
 	url = https://github.com/Twinklebear/TwinklebearDev-Lessons
-[submodule "SDL"]
-	path = SDL
+[submodule "Resource/font/FiraCode"]
+	path = Resource/font/FiraCode
+	url = https://github.com/tonsky/FiraCode
+[submodule "ThirdParty/SDL"]
+	path = ThirdParty/SDL
 	url = https://github.com/libsdl-org/SDL
-[submodule "SDL_mixer"]
-	path = SDL_mixer
+[submodule "ThirdParty/SDL_mixer"]
+	path = ThirdParty/SDL_mixer
 	url = https://github.com/libsdl-org/SDL_mixer
-[submodule "SDL_image"]
-	path = SDL_image
+[submodule "ThirdParty/SDL_image"]
+	path = ThirdParty/SDL_image
 	url = https://github.com/libsdl-org/SDL_image
-[submodule "SDL_ttf"]
-	path = SDL_ttf
+[submodule "ThirdParty/https:/github.com/libsdl-org/SDL_net"]
+	path = ThirdParty/https:/github.com/libsdl-org/SDL_net
 	url = https://github.com/libsdl-org/SDL_ttf
-[submodule "SDL_net"]
-	path = SDL_net
+[submodule "ThirdParty/SDL_ttf"]
+	path = ThirdParty/SDL_ttf
+	url = https://github.com/libsdl-org/SDL_ttf
+[submodule "ThirdParty/SDL_net"]
+	path = ThirdParty/SDL_net
 	url = https://github.com/libsdl-org/SDL_net
-[submodule "SDL_rtf"]
-	path = SDL_rtf
+[submodule "ThirdParty/SDL_rtf"]
+	path = ThirdParty/SDL_rtf
 	url = https://github.com/libsdl-org/SDL_rtf
