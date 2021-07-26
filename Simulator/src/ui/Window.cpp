@@ -92,8 +92,41 @@ void Window::SetWindowTitle(const std::string& title) {
     }
 }
 
-XResult Window::ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *render) {
-    return 0;
+XResult Window::ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *rend, SDL_Rect *clip)
+{
+    SDL_Rect pos;
+    pos.x = x;
+    pos.y = y;
+    if (nullptr != clip) {
+        pos.w = clip->w;
+        pos.h = clip->h;
+    } else {
+        SDL_QueryTexture(texture, nullptr, nullptr, &pos.w, &pos.h);
+    }
+
+    SDL_RenderCopy(rend, texture, clip, &pos);
+}
+
+void Window::Show() {
+    SDL_Event sdlEvent;
+    bool quit = false;
+
+    while (!quit) {
+        if (SDL_PollEvent(&sdlEvent)) {
+            switch (sdlEvent.type) {
+                case SDL_QUIT:
+                    quit = true;
+                    break;
+                default:
+                    break;
+            }
+//            if (sdlEvent.type == SDL_QUIT) {
+//                quit = true;
+//            }
+        }
+    }
+
+    Destroy();
 }
 
 

@@ -19,7 +19,7 @@ public:
     Window();
     Window(int with, int high);
     Window(int x, int y, int with, int high);
-    Window(XRect winSize);
+    explicit Window(XRect winSize);
 //    Window(XRect* winSize);
 
     virtual ~Window();
@@ -28,15 +28,17 @@ public:
 
     void SetWindowTitle(const std::string& title);
 
-    XResult ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *render);
+    XResult ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *rend, SDL_Rect *clip = nullptr);
+
+    virtual void Show();
 
 private:
-    void Destroy();
+    virtual void Destroy();
 
 private:
-    XRect m_WinSize;
-    SDL_Renderer* m_WinRender;
-    SDL_Window* m_Window;
+    XRect m_WinSize{};
+    SDL_Renderer* m_WinRender{};
+    SDL_Window* m_Window{};
     std::string m_WindowTitle;
 };
 
