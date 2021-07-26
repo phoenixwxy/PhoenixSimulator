@@ -1,6 +1,8 @@
 #include <iostream>
 
 #include <stdio.h>
+#include <memory>
+
 
 #include "Test.h"
 
@@ -11,13 +13,18 @@ int main()
     std::cout << "--------------------------------------------" << std::endl << "\t\tTest CPP Begin" << std::endl;
     std::cout << "--------------------------------------------" << std::endl;
 
+    auto test = std::unique_ptr<Test>();
+
+    // TODO Error this function
+//    test->TestLoadRawAndPrint();
 //    auto pTest = new Test();
 //    pTest->TestVoid();
-    auto StdUtility = new std_utility();
+//    auto StdUtility = new std_utility();
+//
+//    StdUtility->forward();
+//
+//    delete StdUtility;
 
-    StdUtility->forward();
-
-    delete StdUtility;
 
     std::cout << "--------------------------------------------" << std::endl << "\t\tTest CPP End" << std::endl;
     std::cout << "--------------------------------------------" << std::endl;

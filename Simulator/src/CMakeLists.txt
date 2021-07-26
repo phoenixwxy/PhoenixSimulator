@@ -1,9 +1,23 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.1)
 
-INCLUDE_DIRECTORIES(.)
+PROJECT(Simulator)
 
-AUX_SOURCE_DIRECTORY(. SRC)
+INCLUDE_DIRECTORIES(.
+        ${CMAKE_SOURCE_DIR}/3rdParty/include
+        ${CMAKE_SOURCE_DIR}/3rdParty/SDL/include/
+        ${CMAKE_SOURCE_DIR}/3rdParty/SDL_Image/include/SDL2/
+        ${CMAKE_SOURCE_DIR}/3rdParty/SDL_Mixer/include/SDL2/
+        ${CMAKE_SOURCE_DIR}/3rdParty/SDL_ttf/include/SDL2/
+        ${CMAKE_SOURCE_DIR}/src/ui/
+        ${CMAKE_SOURCE_DIR}/src/ui/utils/
+        )
 
-ADD_EXECUTABLE(Simulator ${SRC})
+SET(SRC main.cpp
+        ui/Window.cpp)
 
-TARGET_LINK_LIBRARIES(Simulator ${ThirdParty}/SDL/lib/libSDL2.so)
+ADD_EXECUTABLE(${PROJECT_NAME} ${SRC})
+
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${ThirdParty}/SDL/lib/libSDL2.so)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${ThirdParty}/SDL_Image/lib/libSDL2_image.so)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${ThirdParty}/SDL_Mixer/lib/libSDL2_mixer.so)
+TARGET_LINK_LIBRARIES(${PROJECT_NAME} ${ThirdParty}/SDL_ttf/lib/libSDL2_ttf.so)

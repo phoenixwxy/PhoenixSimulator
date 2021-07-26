@@ -35,3 +35,11 @@ void Test::TestVoid() {    void *test = nullptr;
     delete test_auto;
 //    delete test_piont;
 }
+
+void Test::TestLoadRawAndPrint() {
+    auto t1 = new MipiRaw2Raw();
+    t1->ReadData("/home/mi/workspace/code/PhoenixSimulator/Simulator/test/testCPP/ImageProcess/res/IMG_20210708_202151-564_b[0]_w[4080]_h[3072]_sw[0]_sh[0].RAWMIPI12");
+
+    delete t1;
+
+}
