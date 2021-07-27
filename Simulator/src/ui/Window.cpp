@@ -4,6 +4,8 @@
 
 #include "Window.h"
 
+#include <utility>
+
 Window::Window() {
     m_WinSize.w = DEFAULT_WINDOW_SIZE_WITH;
     m_WinSize.h = DEFAULT_WINDOW_SIZE_HIGH;
@@ -81,6 +83,11 @@ XResult Window::Initialize() {
 }
 
 void Window::Destroy() {
+//    SDL_DestroyTexture();
+    SDL_DestroyRenderer(m_WinRender);
+    SDL_DestroyWindow(m_Window);
+
+
     TTF_Quit();
     IMG_Quit();
     SDL_Quit();
@@ -92,7 +99,7 @@ void Window::SetWindowTitle(const std::string& title) {
     }
 }
 
-XResult Window::ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *rend, SDL_Rect *clip)
+void Window::ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *rend, SDL_Rect *clip)
 {
     SDL_Rect pos;
     pos.x = x;
@@ -124,9 +131,40 @@ void Window::Show() {
 //                quit = true;
 //            }
         }
+
+//        SDL_RenderClear(m_WinRender);
+//        SDL_RenderPresent(m_WinRender);
     }
 
     Destroy();
+}
+
+SDL_Texture *Window::LoadImageFromFile(std::string file)
+{
+    SDL_Texture *tex = nullptr;
+    tex = IMG_LoadTexture(m_WinRender, file.c_str());
+    if (tex == nullptr) {
+        throw std::runtime_error("Failed to load image: " + file + IMG_GetError());
+    }
+    return tex;
+}
+
+void Window::LoadImage(std::string file, int x, int y) {
+    // TODO tex could be Member variables
+    SDL_Texture *tex = nullptr;
+    tex = LoadImageFromFile(std::move(file));
+
+    // TODO For test func
+    int iW, iH;
+    SDL_QueryTexture(tex, NULL, NULL, &iW, &iH);
+    x = m_WinSize.w / 2 - iW / 2;
+    y = m_WinSize.h / 2 - iH / 2;
+
+    SDL_RenderClear(m_WinRender);
+    ApplySurfaceToTexture(x, y, tex, m_WinRender);
+    SDL_RenderPresent(m_WinRender);
+
+    SDL_DestroyTexture(tex);
 }
 
 

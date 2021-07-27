@@ -11,10 +11,12 @@ int main()
     std::cout << "Simulator Begin" << std::endl;
 
     Window window;
-    window.Initialize();
     window.SetWindowTitle("123");
+    window.Initialize();
+    window.LoadImage("/home/mi/workspace/code/PhoenixSimulator/Resource/TwinklebearDev-Lessons/res/Lesson1/hello.bmp");
 
-    SDL_Delay(2000);
+    window.Show();
+//    SDL_Delay(2000);
 
     std::cout << "Simulator End" << std::endl;
 

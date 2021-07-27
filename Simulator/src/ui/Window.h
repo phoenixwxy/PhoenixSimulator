@@ -28,12 +28,16 @@ public:
 
     void SetWindowTitle(const std::string& title);
 
-    XResult ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *rend, SDL_Rect *clip = nullptr);
+    void ApplySurfaceToTexture(int x, int y, SDL_Texture *texture, SDL_Renderer *rend, SDL_Rect *clip = nullptr);
 
     virtual void Show();
 
+    void LoadImage(std::string file, int x = 0, int y = 0);
+
 private:
     virtual void Destroy();
+
+    SDL_Texture *LoadImageFromFile(std::string file);
 
 private:
     XRect m_WinSize{};
