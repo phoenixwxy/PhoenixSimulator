@@ -40,7 +40,7 @@ int main()
 
     // Create a surface to display picture, Load BMP picture
     SDL_Surface *bmp = nullptr;
-    bmp = SDL_LoadBMP("/home/mi/workspace/code/PhoenixSimulator/Simulator/test/resource/hello.bmp");
+    bmp = SDL_LoadBMP("/home/mi/workspace/code/PhoenixSimulator/Simulator/test/SDL_Learn1/resource/hello.bmp");
     if (bmp == nullptr) {
         std::cout << SDL_GetError() << std::endl;
         return result = FAILED;
