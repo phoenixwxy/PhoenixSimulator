@@ -23,11 +23,11 @@ Project_PATH=""
 if [[ "$(uname)" == "Darwin" ]]; then
 # Mac OS X 操作系统
     echo "Mac"
-    OS="Mac"
+    OS="macos"
 elif [[ "$(expr substr $(uname -s) 1 5)" == "Linux" ]]; then
 # GNU/Linux操作系统
     echo "Linux"
-    OS="Linux"
+    OS="linux"
 elif [[ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]]; then
 # Windows NT操作系统
     echo "Windows"
@@ -41,8 +41,8 @@ else
 fi
 read -r -p "any Key to Continue"
 
-if [[ $OS == "Mac" || $OS == "Linux" ]]; then
-
+if [[ $OS == "macos" || $OS == "linux" ]]; then
+    echo "prebuild begin"
     SHELL_FOLDER=$(cd "$(dirname "$0")" || exit;pwd)
     echo "$SHELL_FOLDER"
     cd ..
@@ -65,7 +65,17 @@ if [[ $OS == "Mac" || $OS == "Linux" ]]; then
 #${Project_PATH}/ThirdParty/SDL_rtf
 #${Project_PATH}/ThirdParty/SDL_ttf
 #${Project_PATH}/Resource/font/FiraCode
+    mkdir ${Project_PATH}/Simulator/3rdParty/SDL/macos/
+    mkdir ${Project_PATH}/Simulator/3rdParty/SDL/linux/
 
-    export Phoenix_SDL_PREFINX=${Project_PATH}/Simulator/3rdParty/SDL/
+    export Phoenix_SDL_PREFINX=${Project_PATH}/Simulator/3rdParty/SDL/$OS
+    cd "${Project_PATH}"/ThirdParty/SDL || exit 1
+    mkdir build
+    cd build
+    ../configure --prefix=$Phoenix_SDL_PREFINX --enable-shared=yes --enable-static=no
+    make -j8
+    make install
+
+    cd ${Project_PATH}
 
 fi
