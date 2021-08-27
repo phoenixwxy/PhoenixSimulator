@@ -71,11 +71,11 @@ if [[ $OS == "macos" || $OS == "linux" ]]; then
     export Phoenix_SDL_PREFINX=${Project_PATH}/Simulator/3rdParty/SDL/$OS
     cd "${Project_PATH}"/ThirdParty/SDL || exit 1
     mkdir build
-    cd build
+    cd build || exit 1
     ../configure --prefix=$Phoenix_SDL_PREFINX --enable-shared=yes --enable-static=no
     make -j8
     make install
 
-    cd ${Project_PATH}
+    cd ${Project_PATH} || exit 1
 
 fi

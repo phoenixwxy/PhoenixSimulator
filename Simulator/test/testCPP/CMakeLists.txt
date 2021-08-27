@@ -10,6 +10,6 @@ SET(SRC
         main.cpp
         Test.cpp
         std/utility/std_utility.cpp
-        std/utility/std_forward.hpp ImageProcess/MIPI_RAWtoRAW/MipiRaw2Raw.cpp )
+        std/utility/std_forward.hpp ImageProcess/MIPI_RAWtoRAW/MipiRaw2Raw.cpp ../pipe/main.cpp)
 
 ADD_EXECUTABLE(testCpp ${SRC})
